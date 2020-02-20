@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a program that stores value in a variable & tell whether
+the type of that variable is a "number", "string", "boolean" or
+“undefined” -->
+    <script>
+     var none = prompt("Please enter something here!:");
+    //  if(String.fromCharCode(none>=65 && none<=90)||String.fromCharCode(none>=97 && none<=122))
+    function doSomething(none){
+        if(typeof(none) === string)
+        {
+            alert("Variable enetred is A string");
+        }
+        else if(typeof(none) === 'number')
+        {
+            alert("Variable entered is A Number");
+        }
+    }
+    // else if(none == true || none == false)
+    if(typeof(none) == 'boolean')
+    {
+        document.write("You have entered an Boolean Term.");
+        alert("Boolean term or Expression");
+    }
+    else
+    {
+        document.write("You have entered an number");
+        alert("You Have Entered a Number");
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a program to create a calculator for +, -, *, /, % using
+switch case statements. (number1, number2 and operator will
+be input) -->
+    <script>
+     var number11 = prompt("Enter your first number");
+     var number1 = parseInt(number11);
+     var number12 = prompt("Enter your second number");
+     var number2 = parseInt(number12);
+     var operator = prompt("Enter an operator to perform operation on the given  numbers : + , - , * , /");
+     switch(operator)
+     {
+         case '+' : alert(number1+number2);
+         break;
+         case '-' : if(number1 > number2)
+         {
+             alert(number1-number2);
+         }
+         else
+         {
+             alert(number2-number1);
+         }
+         break;
+         case '*' : alert(number1*number2);
+         break;
+         case '/' : if(number1>number2)
+         {
+             alert(number1/number2);         
+         }
+         else
+         {
+             alert(number2/number1);
+         }
+         break;
+     }
+    </script>
+</body>
+</html>

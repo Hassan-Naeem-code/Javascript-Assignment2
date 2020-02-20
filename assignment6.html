@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a program that takes a character(number or string) in a
+variable & checks whether the given input is a number,
+uppercase letter or lower case letter. (Hint: ASCII codes:-
+A=65, Z=90, a=97, z=122) -->
+    <script>
+    var str1 = prompt("Please enter anything the program will teel you that it is a number or uppercase or lowercase alphabet");
+    
+    if(String.fromCharCode(str1>=65 && str1<=90)||String.fromCharCode(str1>=97 && str1<=122))
+    {
+        document.write("You have entered a Uppercase Alphabet");
+        alert("You have entered a lowercase alphabet");
+    }
+    else
+    {
+        document.write("You have entered a number.");
+    }
+    </script>
+</body>
+</html>
